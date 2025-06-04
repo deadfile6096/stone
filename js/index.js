@@ -1,5 +1,5 @@
 document.getElementById("tg").addEventListener("click", function () {
-  const url = "https://x.com/TORCHENOMICS"; // Обновленная ссылка на Twitter
+  const url = "https://x.com/caveman_survive"; // Обновленная ссылка на Twitter
   window.open(url, '_blank'); // Открываем в новой вкладке
 });
 
