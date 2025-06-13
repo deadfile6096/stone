@@ -1,5 +1,5 @@
 document.getElementById("tg").addEventListener("click", function () {
-  const url = "https://x.com/caveman_survive"; // Обновленная ссылка на Twitter
+  const url = "https://x.com/stoneagelounge"; // Обновленная ссылка на Twitter
   window.open(url, '_blank'); // Открываем в новой вкладке
 });
 
@@ -446,7 +446,7 @@ marketplace.addEventListener("click", (e) => {
     
     // Цена
     const modalPrice = document.getElementById("modal-price");
-    modalPrice.textContent = `Price: $CAVE ${selectedItem.price}`;
+    modalPrice.textContent = `Price: $CAVEMAN ${selectedItem.price}`;
     modalPrice.style.color = "#000000";
     modalPrice.style.textShadow = "none";
     
@@ -543,7 +543,7 @@ function openModal(citizen) {
     citizen.description || 'A homo of CaveCash';
   
   // Устанавливаем цену и ранг
-  document.getElementById("modal-price").textContent = `Price: $CAVE ${citizen.price || 0} | Rank: ${rank}`;
+  document.getElementById("modal-price").textContent = `Price: $CAVEMAN ${citizen.price || 0} | Rank: ${rank}`;
   
   // Устанавливаем изображение
   document.getElementById("modal-image").src = citizen.image || 'images/BIT.png';
@@ -578,7 +578,7 @@ function updateMarketplace() {
       <div class="card-header">
         <img src="${item.image}" alt="${item.name}" class="card-image"/>
         <h3>${item.name}</h3>
-        <p>Price: $CAVE ${item.price}</p>
+        <p>Price: $CAVEMAN ${item.price}</p>
       </div>
       <div class="card-info">
         <p>${item.description}</p>
@@ -630,7 +630,7 @@ document.getElementById("sell-btn").addEventListener("click", () => {
     updateCitizenList();
     
     // Показываем сообщение об успехе
-    showSuccessMessage(`You sold ${citizen.name} for $CAVE ${citizen.price || 0}`);    
+    showSuccessMessage(`You sold ${citizen.name} for $CAVEMAN ${citizen.price || 0}`);    
     document.getElementById("modal").style.display = "none";
   }
 });
@@ -649,7 +649,7 @@ document.getElementById("connect-button").addEventListener("click", () => {
   balanceDisplay.textContent = balance;
   
   // Показываем сообщение об успехе
-  showSuccessMessage("Homo revived successfully! You received 1000 $CAVE");
+  showSuccessMessage("Homo revived successfully! You received 1000 $CAVEMAN");
 });
 
 // Инициализация при загрузке страницы
