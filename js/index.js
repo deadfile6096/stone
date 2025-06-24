@@ -446,7 +446,7 @@ marketplace.addEventListener("click", (e) => {
     
     // Цена
     const modalPrice = document.getElementById("modal-price");
-    modalPrice.textContent = `Price: $CAVEMAN ${selectedItem.price}`;
+    modalPrice.textContent = `Price: $STONEAGE ${selectedItem.price}`;
     modalPrice.style.color = "#000000";
     modalPrice.style.textShadow = "none";
     
@@ -543,7 +543,7 @@ function openModal(citizen) {
     citizen.description || 'A homo of CaveCash';
   
   // Устанавливаем цену и ранг
-  document.getElementById("modal-price").textContent = `Price: $CAVEMAN ${citizen.price || 0} | Rank: ${rank}`;
+  document.getElementById("modal-price").textContent = `Price: $STONEAGE ${citizen.price || 0} | Rank: ${rank}`;
   
   // Устанавливаем изображение
   document.getElementById("modal-image").src = citizen.image || 'images/BIT.png';
@@ -578,7 +578,7 @@ function updateMarketplace() {
       <div class="card-header">
         <img src="${item.image}" alt="${item.name}" class="card-image"/>
         <h3>${item.name}</h3>
-        <p>Price: $CAVEMAN ${item.price}</p>
+        <p>Price: $STONEAGE ${item.price}</p>
       </div>
       <div class="card-info">
         <p>${item.description}</p>
@@ -630,7 +630,7 @@ document.getElementById("sell-btn").addEventListener("click", () => {
     updateCitizenList();
     
     // Показываем сообщение об успехе
-    showSuccessMessage(`You sold ${citizen.name} for $CAVEMAN ${citizen.price || 0}`);    
+    showSuccessMessage(`You sold ${citizen.name} for $STONEAGE ${citizen.price || 0}`);    
     document.getElementById("modal").style.display = "none";
   }
 });
@@ -649,7 +649,7 @@ document.getElementById("connect-button").addEventListener("click", () => {
   balanceDisplay.textContent = balance;
   
   // Показываем сообщение об успехе
-  showSuccessMessage("Homo revived successfully! You received 1000 $CAVEMAN");
+  showSuccessMessage("Homo revived successfully! You received 1000 $STONEAGE");
 });
 
 // Инициализация при загрузке страницы
